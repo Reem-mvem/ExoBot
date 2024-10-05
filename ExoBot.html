@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindStudio Chatbot</title>
+    <style>
+    
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+
+        iframe {
+            width: 90vw;
+            height: 90vh;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        window.MindStudioSettings = {
+            publicToken: "pk65319c46fc69cb092bab789a240c96b8",
+            appId: "68a34e22-bddb-4139-81dc-b6175f68ad7c"
+        };
+    </script>
+    <script src="https://api.mindstudio.ai/v1/embed.js"></script>
+    <iframe id="mindstudio-frame" referrerpolicy="origin" title="AI Embed" frameborder="0"></iframe>
+</body>
+</html>
